@@ -1,0 +1,73 @@
+.section {
+  /*en compun a todas las secciones*/
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+.fondo_cont {
+  /*fondo secciones*/
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.cuadro_cont {
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 350px;
+  margin-top: 90px;
+  border-radius: 7px;
+}
+
+.cuadro_cont_h1 {
+  margin-top: 20px;
+  text-align: center;
+  color: #314554;
+  text-shadow: 1px 1px 2px #ffffff;
+  font-size: 6vmin;
+}
+
+.cuadro_cont_img {
+  height: 20px;
+}
+
+.secc_cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1px;
+}
+
+.fondo_clarito {
+  background-color: rgba(49, 69, 84, 0.1);
+  height: 400px;
+  width: 600px;
+  margin-left: 100px;
+  margin-top: 30px;
+  margin-right: 0;
+  border-radius: 7px 0 0 7px;
+  color: #ffffff;
+}
+
+.info_andrea {
+  margin-bottom: 20px;
+}
+
+.cont_contact {
+  margin-left: 50px;
+  padding-top: 30px;
+}
+
+.telef,
+.horar {
+  margin-top: 20px;
+}
+
+.fondomapa_a_img {
+  cursor: pointer;
+  height: 400px;
+  width: 400px;
+  margin-top: 30px;
+  border-radius: 0 7px 7px 0;
+}

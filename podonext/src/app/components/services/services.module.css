@@ -1,0 +1,132 @@
+.section {
+  /*en compun a todas las secciones*/
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  height: 100vh;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.fondo_serv::after {
+  content: "";
+  position: absolute;
+  /* background-image: url(images/Pies-pasto.jpg);*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.titulo_serv {
+  /* título servicios*/
+  position: center;
+  text-align: center;
+  margin-top: 100px;
+  color: #314554;
+}
+
+.services {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  /* Espacio entre las columnas */
+}
+
+/*.fondo-claro-serv {
+    /* cajita tras servicios*/
+
+/*    background: rgba(255, 255, 255, 0.527);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 50px;
+    border-radius: 7px 7px 7px 7px;
+    height: 450px;
+}
+*/
+
+.servicios {
+  /*Cuadro fondo servicios*/
+  width: 220px;
+  background: rgba(255, 255, 255, 0.582);
+  padding: 20px;
+  margin-left: 50px;
+  box-sizing: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 7px;
+}
+
+.servicios_h4 {
+  /* TExto atenciones*/
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  color: #314554;
+  text-align: center;
+}
+
+.servicios_img {
+  /*iconos servicios*/
+  height: 50px;
+  width: auto;
+}
+
+#checkserv1,
+#checkserv2,
+#checkserv3,
+#checkserv4 {
+  /* caja check para expandir*/
+  display: none;
+}
+
+.serv1,
+.serv2,
+.serv3,
+.serv4 {
+  /* texto descripción serv 1*/
+  display: none;
+  font-size: 10px;
+  transition: 0.5 linear;
+  color: #314554;
+}
+
+.lab_serv1,
+.lab_serv2,
+.lab_serv3,
+.lab_serv4 {
+  /* texto más información*/
+  display: inline-block;
+  margin-top: 15px;
+  color: #3bb4c4;
+  cursor: pointer;
+  font-weight: 600;
+  padding-left: 25px;
+}
+
+#checkserv1:checked ~ .serv1,
+#checkserv2:checked ~ .serv2,
+#checkserv3:checked ~ .serv3,
+#checkserv4:checked ~ .serv4 {
+  /* función aparece texto al presionar más información*/
+  display: block;
+}
+
+#checkserv1:checked ~ .lab_serv1,
+#checkserv2:checked ~ .lab_serv2,
+#checkserv3:checked ~ .lab_serv3,
+#checkserv4:checked ~ .lab_serv4 {
+  visibility: hidden;
+}
+
+#checkserv1:checked ~ .lab_serv1:after,
+#checkserv2:checked ~ .lab_serv2:after,
+#checkserv3:checked ~ .lab_serv3:after,
+#checkserv4:checked ~ .lab_serv4:after {
+  /* texto y función de mostrar menos*/
+  content: "Mostrar menos";
+  display: block;
+  visibility: visible;
+}
